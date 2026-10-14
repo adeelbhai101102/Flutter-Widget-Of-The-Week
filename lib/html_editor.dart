@@ -123,7 +123,9 @@ class _HtmlEditorState extends State<HtmlEditor> {
                       topLeft: Radius.circular(8)
                   )
               ),
-              child: QuillToolbar.simple(controller: _controller ),
+              child: QuillSimpleToolbar(
+                controller: _controller,
+              ),
             ),
             Container(
               height: 200,
